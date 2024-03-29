@@ -1,602 +1,589 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UzAgro</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header section -->
-    <header>
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="#" class="header__logo">
-            <img
-              src="./assets/images/Logo.png"
-              alt="logo"
-              class="header__logo"
-            />
-          </a>
-          <div class="d-flex search-lang-login">
-            <img src="./assets/images/search.svg" alt="search" class="search-icon"/>
-            <div class="search search-box">
-              <img src="./assets/images/search.svg" alt="search" />
-              <input type="search" placeholder="Поиск товаров на сайте" />
-              <button>Поиск</button>
-            </div>
-            <div class="languages">
-              <div class="lang uz">Ўз</div>
-              <div class="lang ru active">Рус</div>
-              <div class="lang en">Eng</div>
-            </div>
-            <button class="login">
-              <img src="./assets/images/user.svg" alt="user" />
-              <span>Войти</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+<html lang="ru">
 
-    <!-- nav section -->
-    <nav>
-      <div class="container">
-        <div class="nav-wrapper">
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <img src="./assets/images/burger.svg" alt="burger" />
-          </div>
-          <ul class="nav-list" id="nav-menu">
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-              <img src="./assets/images/close.svg" alt="close" />
-            </div>
-            <li class="nav-item active">
-              <a href="#main" class="nav-link">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#transaction" class="nav-link">СОСТОЯВШИЕСЯ СДЕЛКИ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#info" class="nav-link">ИНФОРМАЦИЯ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#statistics" class="nav-link">СТАТИСТИКА</a>
-            </li>
-            <li class="nav-item">
-              <a href="#partner" class="nav-link">ПАРТНЕРЫ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#goodtoknow" class="nav-link">ПОЛЕЗНО ЗНАТЬ</a>
-            </li>
-          </ul>
-          <a class="phone" href="tel: +998 71 207-00-34">
-            <img src="./assets/images/call.png" alt="call" />
-            <span class="call-number">+998 71 207-00-34</span>
-          </a>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UzAgro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- hero section -->
-    <section class="hero">
-      <div class="carousel">
-        <div class="container">
-          <h1>
-            Свежий и здоровый <br />
-            Органическая продукты
-          </h1>
-          <p>
-            Преимущества органических продуктов. Польза для здоровья. <br />
-            Более высокая насыщенность полезными веществами
-          </p>
-          <button>
-            <span>Подробнее</span>
-            <img src="./assets/images/right-arrow.png" alt="arrow" />
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#" class="header__logo">
+          <img src="./assets/images/Logo.png" alt="logo" class="header__logo">
+        </a>
+        <div class="d-flex search-lang-login">
+          <img src="./assets/images/search.svg" alt="search" class="search-icon">
+          <div class="search search-box">
+            <img src="./assets/images/search.svg" alt="search">
+            <input type="search" placeholder="Поиск товаров на сайте">
+            <button>Поиск</button>
+          </div>
+          <div class="languages">
+            <div class="lang uz">Ўз</div>
+            <div class="lang ru active">Рус</div>
+            <div class="lang en">Eng</div>
+          </div>
+          <button class="login">
+            <img src="./assets/images/user.svg" alt="user">
+            <span>Войти</span>
           </button>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- categories section -->
-    <section class="categories">
-      <div class="container">
-        <div class="categories__wrapper">
-          <!-- Box-1 -->
-          <div class="categories__box">
-            <h1 class="box__title">Зерновые и масличные продукты</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image1.png" alt="product" />
-                <h3>Озимая и яровые</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image2.png" alt="product" />
-                <h3>Соя</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image3.png" alt="product" />
-                <h3>Злаки та бобы</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image4.png" alt="product" />
-                <h3>Подсолнечник</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
-
-          <!-- Box-2 -->
-          <div class="categories__box">
-            <h1 class="box__title">Фрукты</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image5.png" alt="product" />
-                <h3>Яблоко</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image6.png" alt="product" />
-                <h3>Абрикос</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image7.png" alt="product" />
-                <h3>Грейпфрут</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image8.png" alt="product" />
-                <h3>Апельсин</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
-
-          <!-- Box-3 -->
-          <div class="categories__box">
-            <h1 class="box__title">Овощи</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image9.png" alt="product" />
-                <h3>Кабачок</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image10.png" alt="product" />
-                <h3>Томаты</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image11.png" alt="product" />
-                <h3>Огурцы</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image12.png" alt="product" />
-                <h3>Перец</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
-
-          <!-- Box-4 -->
-          <div class="categories__box">
-            <h1 class="box__title">Бобовые продукты</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image13.png" alt="product" />
-                <h3>Фасоль</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image14.png" alt="product" />
-                <h3>Горох</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image15.png" alt="product" />
-                <h3>Чечевицу</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image16.png" alt="product" />
-                <h3>Маш</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
-
-          <!-- Box-5 -->
-          <div class="categories__box">
-            <h1 class="box__title">Зелень</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image17.png" alt="product" />
-                <h3>Артишок</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image18.png" alt="product" />
-                <h3>Петрушка</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image19.png" alt="product" />
-                <h3>Руккола</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image20.png" alt="product" />
-                <h3>Ревень</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
-
-          <!-- Box-6 -->
-          <div class="categories__box">
-            <h1 class="box__title">Бахчевые</h1>
-            <div class="categories__list">
-              <!-- item 1 -->
-              <div class="categories__item">
-                <img src="./assets/images/image21.png" alt="product" />
-                <h3>Арбуз</h3>
-              </div>
-              <!-- item 2 -->
-              <div class="categories__item">
-                <img src="./assets/images/image22.png" alt="product" />
-                <h3>Дыня</h3>
-              </div>
-              <!-- item 3 -->
-              <div class="categories__item">
-                <img src="./assets/images/image23.png" alt="product" />
-                <h3>Тыква</h3>
-              </div>
-              <!-- item 4 -->
-              <div class="categories__item">
-                <img src="./assets/images/image24.png" alt="product" />
-                <h3>Патиссон</h3>
-              </div>
-            </div>
-            <a href="#" class="show__more">Показать больше</a>
-          </div>
+  <!-- nav section -->
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <img src="./assets/images/burger.svg" alt="burger">
         </div>
-        <div class="show__more--btn-wrapper">
-          <button href="#" class="show__more--btn">
-            Показать больше категории
-          </button>
+        <ul class="nav-list" id="nav-menu">
+          <!-- Close button -->
+          <li class="nav__close" id="nav-close">
+            <img src="./assets/images/close.svg" alt="close">
+          </li>
+          <li class="nav-item active">
+            <a href="#main" class="nav-link">ГЛАВНАЯ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#transaction" class="nav-link">СОСТОЯВШИЕСЯ СДЕЛКИ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#info" class="nav-link">ИНФОРМАЦИЯ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#statistics" class="nav-link">СТАТИСТИКА</a>
+          </li>
+          <li class="nav-item">
+            <a href="#partner" class="nav-link">ПАРТНЕРЫ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#goodtoknow" class="nav-link">ПОЛЕЗНО ЗНАТЬ</a>
+          </li>
+        </ul>
+        <a class="phone" href="tel:+998712070034">
+          <img src="./assets/images/call.png" alt="call">
+          <span class="call-number">+998 71 207-00-34</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="carousel">
+      <div class="container">
+        <h1>
+          Свежий и здоровый <br>
+          Органическая продукты
+        </h1>
+        <p>
+          Преимущества органических продуктов. Польза для здоровья. <br>
+          Более высокая насыщенность полезными веществами
+        </p>
+        <button>
+          <span>Подробнее</span>
+          <img src="./assets/images/right-arrow.png" alt="arrow">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- categories section -->
+  <section class="categories">
+    <div class="container">
+      <div class="categories__wrapper">
+        <!-- Box-1 -->
+        <div class="categories__box">
+          <h1 class="box__title">Зерновые и масличные продукты</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image1.png" alt="product">
+              <h3>Озимая и яровые</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image2.png" alt="product">
+              <h3>Соя</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image3.png" alt="product">
+              <h3>Злаки та бобы</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image4.png" alt="product">
+              <h3>Подсолнечник</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
+        </div>
+
+        <!-- Box-2 -->
+        <div class="categories__box">
+          <h1 class="box__title">Фрукты</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image5.png" alt="product">
+              <h3>Яблоко</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image6.png" alt="product">
+              <h3>Абрикос</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image7.png" alt="product">
+              <h3>Грейпфрут</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image8.png" alt="product">
+              <h3>Апельсин</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
+        </div>
+
+        <!-- Box-3 -->
+        <div class="categories__box">
+          <h1 class="box__title">Овощи</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image9.png" alt="product">
+              <h3>Кабачок</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image10.png" alt="product">
+              <h3>Томаты</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image11.png" alt="product">
+              <h3>Огурцы</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image12.png" alt="product">
+              <h3>Перец</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
+        </div>
+
+        <!-- Box-4 -->
+        <div class="categories__box">
+          <h1 class="box__title">Бобовые продукты</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image13.png" alt="product">
+              <h3>Фасоль</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image14.png" alt="product">
+              <h3>Горох</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image15.png" alt="product">
+              <h3>Чечевицу</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image16.png" alt="product">
+              <h3>Маш</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
+        </div>
+
+        <!-- Box-5 -->
+        <div class="categories__box">
+          <h1 class="box__title">Зелень</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image17.png" alt="product">
+              <h3>Артишок</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image18.png" alt="product">
+              <h3>Петрушка</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image19.png" alt="product">
+              <h3>Руккола</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image20.png" alt="product">
+              <h3>Ревень</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
+        </div>
+
+        <!-- Box-6 -->
+        <div class="categories__box">
+          <h1 class="box__title">Бахчевые</h1>
+          <div class="categories__list">
+            <!-- item 1 -->
+            <div class="categories__item">
+              <img src="./assets/images/image21.png" alt="product">
+              <h3>Арбуз</h3>
+            </div>
+            <!-- item 2 -->
+            <div class="categories__item">
+              <img src="./assets/images/image22.png" alt="product">
+              <h3>Дыня</h3>
+            </div>
+            <!-- item 3 -->
+            <div class="categories__item">
+              <img src="./assets/images/image23.png" alt="product">
+              <h3>Тыква</h3>
+            </div>
+            <!-- item 4 -->
+            <div class="categories__item">
+              <img src="./assets/images/image24.png" alt="product">
+              <h3>Патиссон</h3>
+            </div>
+          </div>
+          <a href="#" class="show__more">Показать больше</a>
         </div>
       </div>
-    </section>
-
-    <!-- new product section -->
-    <section class="new-product">
-      <div class="container">
-        <h1>Новые товары</h1>
-        <div class="new-product__wrapper">
-          <!-- card-1 -->
-          <div class="new-product__card">
-            <img src="./assets/images/lot1.png" alt="lot-img" />
-            <div class="new-product__card--info">
-              <p>Номер: <span>48385</span></p>
-              <p>Яблоко</p>
-              <p>Старт. цена: <span>4715 UZS</span></p>
-              <p>Количество: <span>1/100 кг.</span></p>
-              <p>Дата окончания: <b>02.06.2024</b></p>
-            </div>
-          </div>
-
-          <!-- card-2 -->
-          <div class="new-product__card">
-            <img src="./assets/images/lot2.png" alt="lot-img" />
-            <div class="new-product__card--info">
-              <p>Номер: <span>48385</span></p>
-              <p>Яблоко</p>
-              <p>Старт. цена: <span>4715 UZS</span></p>
-              <p>Количество: <span>1/100 кг.</span></p>
-              <p>Дата окончания: <b>02.06.2024</b></p>
-            </div>
-          </div>
-
-          <!-- card-3 -->
-          <div class="new-product__card">
-            <img src="./assets/images/lot3.png" alt="lot-img" />
-            <div class="new-product__card--info">
-              <p>Номер: <span>48385</span></p>
-              <p>Яблоко</p>
-              <p>Старт. цена: <span>4715 UZS</span></p>
-              <p>Количество: <span>1/100 кг.</span></p>
-              <p>Дата окончания: <b>02.06.2024</b></p>
-            </div>
-          </div>
-
-          <!-- card-4 -->
-          <div class="new-product__card">
-            <img src="./assets/images/lot4.png" alt="lot-img" />
-            <div class="new-product__card--info">
-              <p>Номер: <span>48385</span></p>
-              <p>Яблоко</p>
-              <p>Старт. цена: <span>4715 UZS</span></p>
-              <p>Количество: <span>1/100 кг.</span></p>
-              <p>Дата окончания: <b>02.06.2024</b></p>
-            </div>
-          </div>
-        </div>
-        <div class="show__more--btn-wrapper">
-          <button href="#" class="show__more--btn">
-            Показать больше товаров
-          </button>
-        </div>
+      <div class="show__more--btn-wrapper">
+        <button class="show__more--btn">
+          Показать больше категории
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- map section -->
-    <section class="map-info">
-      <div class="container">
-        <div class="map-info__wrapper">
-          <div class="map">
-            <h1>Мониторинг закупок</h1>
-            <div class="selects">
-              <select name="" id="">
-                <option value="2024">2024 год</option>
-                <option value="2023">2023 год</option>
-                <option value="2022">2022 год</option>
-                <option value="2021">2021 год</option>
-              </select>
-              <select name="" id="">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-              </select>
-            </div>
-            <div class="map-container"></div>
+  <!-- new product section -->
+  <section class="new-product">
+    <div class="container">
+      <h1>Новые товары</h1>
+      <div class="new-product__wrapper">
+        <!-- card-1 -->
+        <div class="new-product__card">
+          <img src="./assets/images/lot1.png" alt="lot-img">
+          <div class="new-product__card--info">
+            <p>Номер: <span>48385</span></p>
+            <p>Яблоко</p>
+            <p>Старт. цена: <span>4715 UZS</span></p>
+            <p>Количество: <span>1/100 кг.</span></p>
+            <p>Дата окончания: <b>02.06.2024</b></p>
           </div>
-          <div class="info">
-            <h1>Навоийская область</h1>
-            <div class="info__list">
-              <!-- item-1 -->
-              <div class="info__item">
-                <img src="./assets/images/Union1.png" alt="unions" />
-                <div class="datas">
-                  <p>Зерновые и масличные продукты</p>
-                  <h4>8,5 млрд.</h4>
-                  <div class="rate">
-                    <div class="cereals specific"></div>
-                  </div>
-                </div>
-              </div>
+        </div>
 
-              <!-- item-2 -->
-              <div class="info__item">
-                <img src="./assets/images/Union2.png" alt="unions" />
-                <div class="datas">
-                  <p>Фрукты</p>
-                  <h4>6,5 млрд.</h4>
-                  <div class="rate">
-                    <div class="fruits specific"></div>
-                  </div>
-                </div>
-              </div>
+        <!-- card-2 -->
+        <div class="new-product__card">
+          <img src="./assets/images/lot2.png" alt="lot-img">
+          <div class="new-product__card--info">
+            <p>Номер: <span>48385</span></p>
+            <p>Яблоко</p>
+            <p>Старт. цена: <span>4715 UZS</span></p>
+            <p>Количество: <span>1/100 кг.</span></p>
+            <p>Дата окончания: <b>02.06.2024</b></p>
+          </div>
+        </div>
 
-              <!-- item-3 -->
-              <div class="info__item">
-                <img src="./assets/images/Union3.png" alt="unions" />
-                <div class="datas">
-                  <p>Бобовые продукты</p>
-                  <h4>5,0 млрд.</h4>
-                  <div class="rate">
-                    <div class="bean specific"></div>
-                  </div>
-                </div>
-              </div>
+        <!-- card-3 -->
+        <div class="new-product__card">
+          <img src="./assets/images/lot3.png" alt="lot-img">
+          <div class="new-product__card--info">
+            <p>Номер: <span>48385</span></p>
+            <p>Яблоко</p>
+            <p>Старт. цена: <span>4715 UZS</span></p>
+            <p>Количество: <span>1/100 кг.</span></p>
+            <p>Дата окончания: <b>02.06.2024</b></p>
+          </div>
+        </div>
 
-              <!-- item-4 -->
-              <div class="info__item">
-                <img src="./assets/images/Union4.png" alt="unions" />
-                <div class="datas">
-                  <p>Овощи</p>
-                  <h4>4,2 млрд.</h4>
-                  <div class="rate">
-                    <div class="veg specific"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- item-5 -->
-              <div class="info__item">
-                <img src="./assets/images/Union5.png" alt="unions" />
-                <div class="datas">
-                  <p>Бахчевые</p>
-                  <h4>3,7 млрд.</h4>
-                  <div class="rate">
-                    <div class="melons specific"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- card-4 -->
+        <div class="new-product__card">
+          <img src="./assets/images/lot4.png" alt="lot-img">
+          <div class="new-product__card--info">
+            <p>Номер: <span>48385</span></p>
+            <p>Яблоко</p>
+            <p>Старт. цена: <span>4715 UZS</span></p>
+            <p>Количество: <span>1/100 кг.</span></p>
+            <p>Дата окончания: <b>02.06.2024</b></p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="show__more--btn-wrapper">
+        <button class="show__more--btn">
+          Показать больше товаров
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- news section -->
-    <section class="news">
-      <div class="container">
-        <div class="news__head">
-          <h1>Новости</h1>
-          <a href="#" class="all__news"
-            >Все новости
-            <img src="./assets/images/right-arrow.png" alt="right-arrow"
-          /></a>
+  <!-- map section -->
+  <section class="map-info">
+    <div class="container">
+      <div class="map-info__wrapper">
+        <div class="map">
+          <h1>Мониторинг закупок</h1>
+          <div class="selects">
+            <select>
+              <option value="2024">2024 год</option>
+              <option value="2023">2023 год</option>
+              <option value="2022">2022 год</option>
+              <option value="2021">2021 год</option>
+            </select>
+            <select>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+            </select>
+          </div>
+          <div class="map-container"></div>
         </div>
-        <div class="news__wrapper">
-          <!-- card-1 -->
-          <div class="news__card">
-            <div class="news__card--img">
-              <img src="./assets/images/news1.png" alt="news-img" />
+        <div class="info">
+          <h1>Навоийская область</h1>
+          <div class="info__list">
+            <!-- item-1 -->
+            <div class="info__item">
+              <img src="./assets/images/Union1.png" alt="unions">
+              <div class="datas">
+                <p>Зерновые и масличные продукты</p>
+                <h4>8,5 млрд.</h4>
+                <div class="rate">
+                  <div class="cereals specific"></div>
+                </div>
+              </div>
             </div>
-            <div class="news__card--date">
-              <p>17</p>
-              <small>Авг</small>
-            </div>
-            <div class="news__card--info">
-              <p>
-                Проект «Развитие плодоовощеводства <br />
-                и виноградарства в Республике <br />
-                Узбекистан»
-              </p>
-              <a href="#" class="news__card--btn"
-                >Подробнее
-                <img src="./assets/images/right-arrow.png" alt="right-arrow"
-              /></a>
-            </div>
-          </div>
 
-          <!-- card-2 -->
-          <div class="news__card">
-            <div class="news__card--img">
-              <img src="./assets/images/news2.png" alt="news-img" />
+            <!-- item-2 -->
+            <div class="info__item">
+              <img src="./assets/images/Union2.png" alt="unions">
+              <div class="datas">
+                <p>Фрукты</p>
+                <h4>6,5 млрд.</h4>
+                <div class="rate">
+                  <div class="fruits specific"></div>
+                </div>
+              </div>
             </div>
-            <div class="news__card--date">
-              <p>18</p>
-              <small>Авг</small>
-            </div>
-            <div class="news__card--info">
-              <p>
-                Совместный проект «Укрепление <br />
-                регионального сотрудничества и ...
-              </p>
-              <a href="#" class="news__card--btn"
-                >Подробнее
-                <img src="./assets/images/right-arrow.png" alt="right-arrow"
-              /></a>
-            </div>
-          </div>
 
-          <!-- card-3 -->
-          <div class="news__card">
-            <div class="news__card--img">
-              <img src="./assets/images/news3.png" alt="news-img" />
+            <!-- item-3 -->
+            <div class="info__item">
+              <img src="./assets/images/Union3.png" alt="unions">
+              <div class="datas">
+                <p>Бобовые продукты</p>
+                <h4>5,0 млрд.</h4>
+                <div class="rate">
+                  <div class="bean specific"></div>
+                </div>
+              </div>
             </div>
-            <div class="news__card--date">
-              <p>21</p>
-              <small>Авг</small>
+
+            <!-- item-4 -->
+            <div class="info__item">
+              <img src="./assets/images/Union4.png" alt="unions">
+              <div class="datas">
+                <p>Овощи</p>
+                <h4>4,2 млрд.</h4>
+                <div class="rate">
+                  <div class="veg specific"></div>
+                </div>
+              </div>
             </div>
-            <div class="news__card--info">
-              <p>
-                Майонез «Моя Станица» – уже в <br />
-                продаже
-              </p>
-              <a href="#" class="news__card--btn"
-                >Подробнее
-                <img src="./assets/images/right-arrow.png" alt="right-arrow"
-              /></a>
+
+            <!-- item-5 -->
+            <div class="info__item">
+              <img src="./assets/images/Union5.png" alt="unions">
+              <div class="datas">
+                <p>Бахчевые</p>
+                <h4>3,7 млрд.</h4>
+                <div class="rate">
+                  <div class="melons specific"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer section -->
-    <footer>
-      <div class="container">
-        <div class="footer__logo">
-          <img src="./assets/images/logo-footer.png" alt="footer-logo" />
+  <!-- news section -->
+  <section class="news">
+    <div class="container">
+      <div class="news__head">
+        <h1>Новости</h1>
+        <a href="#" class="all__news">Все новости
+          <img src="./assets/images/right-arrow.png" alt="right-arrow"></a>
+      </div>
+      <div class="news__wrapper">
+        <!-- card-1 -->
+        <div class="news__card">
+          <div class="news__card--img">
+            <img src="./assets/images/news1.png" alt="news-img">
+          </div>
+          <div class="news__card--date">
+            <p>17</p>
+            <small>Авг</small>
+          </div>
+          <div class="news__card--info">
+            <p>
+              Проект «Развитие плодоовощеводства <br>
+              и виноградарства в Республике <br>
+              Узбекистан»
+            </p>
+            <a href="#" class="news__card--btn">Подробнее
+              <img src="./assets/images/right-arrow.png" alt="right-arrow"></a>
+          </div>
         </div>
-        <div class="footer__wrapper">
-          <!-- first column -->
-          <div class="footer__first-column">
-            <div class="footer__text">
-              <p>Уполномоченный орган : Министерство</p>
-              <p>Экономики и финансов Республики Узбекистан</p>
-              <p>Адрес: 100017 Республика Узбекистан г.</p>
-              <p>Ташкент ул. Истиклол д. 29</p>
-              <p>Телефон: <a href="tel: +998712035050">(71) 203-50-50</a></p>
-              <p>E-mail: <a href="mailto: info@mf.uz">info@mf.uz</a></p>
-              <p>E-xat: для Министерств и ведомств mf@exat.uz</p>
-            </div>
-          </div>
 
-          <!-- second column -->
-          <div class="footer__second-column">
-            <div class="footer__menu">
-              <ul>
-                <li>
-                  <a href="#">СОСТОЯВШИЕСЯ СДЕЛКИ </a>
-                </li>
-                <li>
-                  <a href="#">ИНФОРМАЦИЯ </a>
-                </li>
-                <li>
-                  <a href="#">СТАТИСТИКА </a>
-                </li>
-                <li>
-                  <a href="#"> ПАРТНЕРЫ </a>
-                </li>
-                <li>
-                  <a href="#"> ПОЛЕЗНО ЗНАТЬ </a>
-                </li>
-              </ul>
-            </div>
+        <!-- card-2 -->
+        <div class="news__card">
+          <div class="news__card--img">
+            <img src="./assets/images/news2.png" alt="news-img">
           </div>
+          <div class="news__card--date">
+            <p>18</p>
+            <small>Авг</small>
+          </div>
+          <div class="news__card--info">
+            <p>
+              Совместный проект «Укрепление <br>
+              регионального сотрудничества и ...
+            </p>
+            <a href="#" class="news__card--btn">Подробнее
+              <img src="./assets/images/right-arrow.png" alt="right-arrow"></a>
+          </div>
+        </div>
 
-          <!-- third column -->
-          <div class="footer__third-column">
-            <ul class="third__menu">
+        <!-- card-3 -->
+        <div class="news__card">
+          <div class="news__card--img">
+            <img src="./assets/images/news3.png" alt="news-img">
+          </div>
+          <div class="news__card--date">
+            <p>21</p>
+            <small>Авг</small>
+          </div>
+          <div class="news__card--info">
+            <p>
+              Майонез «Моя Станица» – уже в <br>
+              продаже
+            </p>
+            <a href="#" class="news__card--btn">Подробнее
+              <img src="./assets/images/right-arrow.png" alt="right-arrow"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer>
+    <div class="container">
+      <div class="footer__logo">
+        <img src="./assets/images/logo-footer.png" alt="footer-logo">
+      </div>
+      <div class="footer__wrapper">
+        <!-- first column -->
+        <div class="footer__first-column">
+          <div class="footer__text">
+            <p>Уполномоченный орган : Министерство</p>
+            <p>Экономики и финансов Республики Узбекистан</p>
+            <p>Адрес: 100017 Республика Узбекистан г.</p>
+            <p>Ташкент ул. Истиклол д. 29</p>
+            <p>Телефон: <a href="tel:+998712035050">(71) 203-50-50</a></p>
+            <p>E-mail: <a href="mailto:info@mf.uz">info@mf.uz</a></p>
+            <p>E-xat: для Министерств и ведомств mf@exat.uz</p>
+          </div>
+        </div>
+
+        <!-- second column -->
+        <div class="footer__second-column">
+          <div class="footer__menu">
+            <ul>
               <li>
-                <a href="#">Термины и определения Политика </a>
+                <a href="#">СОСТОЯВШИЕСЯ СДЕЛКИ </a>
               </li>
               <li>
-                <a href="#"> конфиденциальности Часто </a>
+                <a href="#">ИНФОРМАЦИЯ </a>
               </li>
               <li>
-                <a href="#">задаваемые вопросы </a>
+                <a href="#">СТАТИСТИКА </a>
+              </li>
+              <li>
+                <a href="#"> ПАРТНЕРЫ </a>
+              </li>
+              <li>
+                <a href="#"> ПОЛЕЗНО ЗНАТЬ </a>
               </li>
             </ul>
-            <div class="footer__social">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/facebook.png" alt="facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/instagram.png" alt="instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/x.png" alt="twitter"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/youtube.png" alt="youtube"
-                  /></a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-        <hr />
-        <div class="footer__copyright">
-          <p>Copyright &copy; 2020-2024. Все права защищены.</p>
+
+        <!-- third column -->
+        <div class="footer__third-column">
+          <ul class="third__menu">
+            <li>
+              <a href="#">Термины и определения Политика </a>
+            </li>
+            <li>
+              <a href="#"> конфиденциальности Часто </a>
+            </li>
+            <li>
+              <a href="#">задаваемые вопросы </a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/facebook.png" alt="facebook"></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/instagram.png" alt="instagram"></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/x.png" alt="twitter"></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/youtube.png" alt="youtube"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
+      <hr>
+      <div class="footer__copyright">
+        <p>Copyright &copy; 2020-2024. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>
