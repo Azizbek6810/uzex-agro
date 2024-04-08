@@ -2,10 +2,13 @@
 @import "./assets/fonts/stylesheet.css";
 
 /* common styles start */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -256,7 +259,7 @@ nav a {
 
 /* hero section start */
 .carousel {
-  background: url("./assets/images/veg.png");
+  background: url("./assets/images/banner.png");
   height: 386px;
   width: 100%;
   background-position: center;
@@ -397,6 +400,13 @@ nav a {
   border: 1px solid #ccc;
   transition: box-shadow 0.2s linear;
   cursor: pointer;
+  background-color: #fff;
+}
+
+.new-product__card img {
+  width: 304px;
+  height: 234px;
+  object-fit: cover;
 }
 
 .new-product__card:hover {
@@ -772,6 +782,184 @@ footer hr {
 
 /* footer section end */
 
+/* Products page - Collapse section start */
+.collapsible {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.collapsible input[type="checkbox"] {
+  display: none;
+}
+
+.collapsible .collapsible-head {
+  position: relative;
+  background-color: #fff;
+  color: var(--main-green-color);
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+.filter-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 24px 0 24px 42px;
+}
+
+.collapsible-head p {
+  height: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-green-color);
+  padding: 24px 34px 24px 43px;
+  border-radius: 0 10px 10px 0;
+  column-gap: 18px;
+  cursor: pointer;
+}
+
+.collapsible-head p span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.collapsible-text {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 10px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.collapsible input[type="checkbox"]:checked~.collapsible-text {
+  max-height: fit-content;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  top: 0;
+  padding: 36px 50px;
+}
+
+.collapsible-text form {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+  padding: 14px 20px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 6px;
+  outline: none;
+  color: rgb(202, 202, 202);
+  width: 300px;
+}
+
+.form-group select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  background: url("./assets/images/select-down.svg") no-repeat 0 0;
+  background-position: calc(100% - 0.75rem) center !important;
+}
+
+.form-group select option {
+  color: black;
+  padding: 5px 0;
+}
+
+.form-group input::placeholder {
+  color: rgb(202, 202, 202);
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group label span {
+  color: red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.filter__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.filter__buttons button {
+  width: auto;
+  background-color: var(--main-green-color);
+  color: #fff;
+  border: none;
+  padding: 15px 38px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter__buttons button.clear {
+  background-color: transparent;
+  color: var(--main-green-color);
+  border: 1px solid var(--main-green-color);
+}
+
+/* Products Banner section style */
+.products-banner {
+  background: url('./assets/images/banner.png') no-repeat center top;
+  height: 127px;
+}
+
+.products-banner__wrapper {
+  padding: 47px 0 38px 0;
+}
+
+.products-banner__title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+/* Products page - Collapse section end */
+
 /* MEDIA QUERIES START */
 
 /*  media query 1200px - 1400px */
@@ -934,6 +1122,21 @@ footer hr {
   footer ul {
     padding: 0;
   }
+
+  /* products page- filter section styles */
+
+  .filter-text {
+    padding: 24px 0 24px 24px;
+    font-size: 16px;
+  }
+
+  .collapsible-head p {
+    padding: 24px 34px;
+  }
+
+  .collapsible input[type="checkbox"]:checked~.collapsible-text {
+    padding: 22px;
+  }
 }
 
 /*  media query 576px - 768px */
@@ -1026,6 +1229,51 @@ footer hr {
 
   footer ul {
     padding: 0;
+  }
+
+  /* products page- filter section styles */
+  .collapsible .collapsible-head {
+    align-items: normal;
+  }
+
+  .filter-text {
+    padding: 14px 0 14px 24px;
+    font-size: 16px;
+  }
+
+  .collapsible-head p {
+    padding: 14px 24px;
+    width: 66%;
+    height: auto;
+  }
+
+  .collapsible-head p span {
+    font-size: 16px;
+  }
+
+  .collapsible input[type="checkbox"]:checked~.collapsible-text {
+    padding: 22px;
+  }
+
+  .collapsible-text form {
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-group,
+  .filter__buttons {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+  }
+
+  .filter__buttons button {
+    flex-grow: 1;
+    justify-content: center;
   }
 }
 
@@ -1154,6 +1402,60 @@ footer hr {
   footer ul {
     padding: 0;
   }
+
+  /* products page- filter section styles */
+  .collapsible .collapsible-head {
+    align-items: normal;
+    flex-wrap: wrap;
+  }
+
+  .filter-text {
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .collapsible-head p {
+    padding: 14px;
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+  }
+
+  .collapsible-head p span {
+    font-size: 16px;
+  }
+
+  .collapsible input[type="checkbox"]:checked~.collapsible-text {
+    padding: 22px;
+  }
+
+  .collapsible-text form {
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-group,
+  .filter__buttons {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+  }
+
+  .filter__buttons {
+    flex-wrap: wrap;
+  }
+
+  .filter__buttons button {
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
 
 /*  media query max-width 576px  */
@@ -1181,6 +1483,7 @@ footer hr {
   .info h1 {
     margin-left: 0;
   }
+
 }
 
 /* MEDIA QUERIES END */

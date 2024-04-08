@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzAgro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #eff5f3;">
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="header__logo">
+                    <img src="./assets/images/Logo.svg" alt="logo" class="header__logo">
+                </a>
+                <div class="d-flex search-lang-login">
+                    <img src="./assets/images/search.svg" alt="search" class="search-icon">
+                    <div class="search search-box">
+                        <img src="./assets/images/search.svg" alt="search">
+                        <input type="search" placeholder="Поиск товаров на сайте">
+                        <button>Поиск</button>
+                    </div>
+                    <div class="languages">
+                        <div class="lang uz">Ўз</div>
+                        <div class="lang ru active">Рус</div>
+                        <div class="lang en">Eng</div>
+                    </div>
+                    <button class="login">
+                        <img src="./assets/images/user.svg" alt="user">
+                        <span>Войти</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav section -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <img src="./assets/images/burger.svg" alt="burger">
+                </div>
+                <ul class="nav-list" id="nav-menu">
+                    <!-- Close button -->
+                    <li class="nav__close" id="nav-close">
+                        <img src="./assets/images/close.svg" alt="close">
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#main" class="nav-link">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#transaction" class="nav-link">СОСТОЯВШИЕСЯ СДЕЛКИ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#statistics" class="nav-link">СТАТИСТИКА</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#partner" class="nav-link">ПАРТНЕРЫ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#goodtoknow" class="nav-link">ПОЛЕЗНО ЗНАТЬ</a>
+                    </li>
+                </ul>
+                <a class="phone" href="tel:+998712070034">
+                    <img src="./assets/images/call.svg" alt="call">
+                    <span class="call-number">+998 71 207-00-34</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="products-banner">
+        <div class="container">
+            <div class="products-banner__wrapper">
+                <p class="products-banner__title">Овощи</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- filter section -->
+    <section class="filter">
+        <div class="container">
+            <div class="collapsible">
+                <input type="checkbox" id="collapsible-head">
+                <label class="collapsible-head" for="collapsible-head">
+                    <div class="filter-text"><b> Каталогда 598 маҳсулот. </b> Кўрсатилган 1 - 20 </div>
+                    <p>
+                        <img src="./assets/images/filter.svg" alt="filter">
+                        <span>Показать фильтр</span>
+                    </p>
+                </label>
+                <div class="collapsible-text">
+                    <form>
+                        <!-- form group-1 -->
+                        <div class="form-group">
+                            <label for="product-type">Тип торговли<span>*</span></label>
+                            <select id="product-type">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Type-1</option>
+                                <option value="2">Type-2</option>
+                                <option value="3">Type-3</option>
+                                <option value="4">Type-4</option>
+                            </select>
+                        </div>
+
+                        <!-- form group-2 -->
+                        <div class="form-group">
+                            <label for="product-type1">Тип контракта</label>
+                            <select id="product-type1">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Type-1</option>
+                                <option value="2">Type-2</option>
+                                <option value="3">Type-3</option>
+                                <option value="4">Type-4</option>
+                            </select>
+                        </div>
+
+                        <!-- form group-3 -->
+                        <div class="form-group">
+                            <label for="product-type2">Категория</label>
+                            <select id="product-type2">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Type-1</option>
+                                <option value="2">Type-2</option>
+                                <option value="3">Type-3</option>
+                                <option value="4">Type-4</option>
+                            </select>
+                        </div>
+
+                        <!-- form group-4 -->
+                        <div class="form-group">
+                            <label for="product-type3">Товар</label>
+                            <select id="product-type3">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Type-1</option>
+                                <option value="2">Type-2</option>
+                                <option value="3">Type-3</option>
+                                <option value="4">Type-4</option>
+                            </select>
+                        </div>
+
+                        <!-- form group-5 -->
+                        <div class="form-group">
+                            <label for="product-type4">Номер</label>
+                            <input id="product-type4" type="number" placeholder="Номер">
+                        </div>
+                        <div class="filter__buttons">
+                            <button class="search">Қидириш</button>
+                            <button class="clear">Ўчириш</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new product section -->
+    <section class="new-product">
+        <div class="container">
+            <div class="new-product__wrapper">
+                <!-- card-1 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/lot1.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/lot2.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/lot3.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/lot4.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-1.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-2.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-7 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-3.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-8 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-4.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-9 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-5.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-10 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-6.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-11 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-7.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+                <!-- card-12 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-8.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-13 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-9.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-14 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-10.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+                <!-- card-15 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-11.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+                <!-- card-16 -->
+                <div class="new-product__card">
+                    <img src="./assets/images/product-12.jpg" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="show__more--btn-wrapper">
+                <button class="show__more--btn">
+                    Показать больше товаров
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./assets/images/logo-footer.svg" alt="footer-logo">
+            </div>
+            <div class="footer__wrapper">
+                <!-- first column -->
+                <div class="footer__first-column">
+                    <div class="footer__text">
+                        <p>Уполномоченный орган : Министерство</p>
+                        <p>Экономики и финансов Республики Узбекистан</p>
+                        <p>Адрес: 100017 Республика Узбекистан г.</p>
+                        <p>Ташкент ул. Истиклол д. 29</p>
+                        <p>Телефон: <a href="tel:+998712035050">(71) 203-50-50</a></p>
+                        <p>E-mail: <a href="mailto:info@mf.uz">info@mf.uz</a></p>
+                        <p>E-xat: для Министерств и ведомств mf@exat.uz</p>
+                    </div>
+                </div>
+
+                <!-- second column -->
+                <div class="footer__second-column">
+                    <div class="footer__menu">
+                        <ul>
+                            <li>
+                                <a href="#">СОСТОЯВШИЕСЯ СДЕЛКИ </a>
+                            </li>
+                            <li>
+                                <a href="#">ИНФОРМАЦИЯ </a>
+                            </li>
+                            <li>
+                                <a href="#">СТАТИСТИКА </a>
+                            </li>
+                            <li>
+                                <a href="#"> ПАРТНЕРЫ </a>
+                            </li>
+                            <li>
+                                <a href="#"> ПОЛЕЗНО ЗНАТЬ </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- third column -->
+                <div class="footer__third-column">
+                    <ul class="third__menu">
+                        <li>
+                            <a href="#">Термины и определения Политика </a>
+                        </li>
+                        <li>
+                            <a href="#"> конфиденциальности Часто </a>
+                        </li>
+                        <li>
+                            <a href="#">задаваемые вопросы </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/facebook.png" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/instagram.png" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/x.png" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/youtube.png" alt="youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__copyright">
+                <p>Copyright &copy; 2020-2024. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
