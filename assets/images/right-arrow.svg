@@ -1,4 +1,11 @@
-<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 7.50049H1" stroke="#446354" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.94995 1.47559L16 7.49959L9.94995 13.5246" stroke="#446354" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="16.000000" height="14.000000" viewBox="0 0 16 14" fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>
+			Created with Pixso.
+    </desc>
+    <defs/>
+    <path id="Vector" d="M15 6.5L0 6.5" stroke="#446354" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+    <path id="Vector" d="M8.94 0.47L15 6.49L8.94 12.52" stroke="#446354" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>
+

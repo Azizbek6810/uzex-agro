@@ -913,9 +913,10 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type="number"] {
+/* input[type="number"] {
+  appearance: textfield;
   -moz-appearance: textfield;
-}
+} */
 
 .filter__buttons {
   display: flex;
@@ -959,6 +960,119 @@ input[type="number"] {
 }
 
 /* Products page - Collapse section end */
+
+/* LOT page - Lot section start */
+.lot {
+  padding: 47px 0 50px;
+}
+
+.lot__title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 42px;
+}
+
+.lot__wrapper {
+  background-color: #fff;
+  padding: 45px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.lot__main-img {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(202, 202, 202);
+  border-radius: 10px;
+  width: 572px;
+  height: 490px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.lot__mini-images {
+  display: flex;
+  gap: 20px;
+
+}
+
+.lot__mini-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(202, 202, 202);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lot__infos h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  margin-bottom: 18px;
+}
+
+.lot__infos p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.lot__infos p b {
+  font-weight: 600;
+}
+
+.lot__infos p span {
+  color: #2baf1f;
+  font-weight: 600;
+}
+
+.start-end__date {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.start-end__date button {
+  border: none;
+  padding: 11px 0;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.start-end__date button b {
+  font-weight: 600;
+}
+
+.start__date {
+  background-color: #D8E9F9;
+}
+
+.end__date {
+  background-color: #F9D8D8;
+}
+
+.lot__new-product {
+  background-color: #fff;
+}
+
+/* LOT page - Lot section end */
 
 /* MEDIA QUERIES START */
 
@@ -1032,6 +1146,11 @@ input[type="number"] {
 
   /* news section styles */
   .news__wrapper {
+    justify-content: center;
+  }
+
+  /* LOT page section lot styles */
+  .lot__wrapper {
     justify-content: center;
   }
 }
@@ -1136,6 +1255,11 @@ input[type="number"] {
 
   .collapsible input[type="checkbox"]:checked~.collapsible-text {
     padding: 22px;
+  }
+
+  /* LOT page section lot styles */
+  .lot__wrapper {
+    justify-content: center;
   }
 }
 
@@ -1275,6 +1399,25 @@ input[type="number"] {
     flex-grow: 1;
     justify-content: center;
   }
+
+
+  /* LOT page section lot styles */
+  .lot__wrapper {
+    justify-content: center;
+  }
+
+  .lot__wrapper {
+    padding: 30px;
+  }
+
+  .lot__main-img {
+    width: 100%;
+  }
+
+  .lot__mini-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /*  media query max-width 576px  */
@@ -1314,8 +1457,8 @@ input[type="number"] {
     left: -100%;
     background-color: #0f0f0f33;
     backdrop-filter: blur(16px);
-
-    width: 50%;
+   align-items: center;
+    width: 100%;
     height: 100%;
     padding: 6rem 3rem 0;
     transition: left 0.8s;
@@ -1456,6 +1599,36 @@ input[type="number"] {
     flex-grow: 1;
     justify-content: center;
   }
+
+
+  /* LOT page section lot styles */
+  .lot__wrapper {
+    justify-content: center;
+  }
+
+  .lot__title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .lot__wrapper {
+    padding: 30px;
+  }
+
+  .lot__main-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lot__mini-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lot__infos h1 {
+    font-size: 25px;
+  }
 }
 
 /*  media query max-width 576px  */
@@ -1482,6 +1655,12 @@ input[type="number"] {
 
   .info h1 {
     margin-left: 0;
+  }
+
+  /* LOT page section lot styles */
+  .lot__mini-img {
+    width: 50%;
+    height: auto;
   }
 
 }

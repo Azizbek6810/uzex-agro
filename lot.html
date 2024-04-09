@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzAgro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #eff5f3;">
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="header__logo">
+                    <img src="./assets/images/Logo.svg" alt="logo" class="header__logo">
+                </a>
+                <div class="d-flex search-lang-login">
+                    <img src="./assets/images/search.svg" alt="search" class="search-icon">
+                    <div class="search search-box">
+                        <img src="./assets/images/search.svg" alt="search">
+                        <input type="search" placeholder="Поиск товаров на сайте">
+                        <button>Поиск</button>
+                    </div>
+                    <div class="languages">
+                        <div class="lang uz">Ўз</div>
+                        <div class="lang ru active">Рус</div>
+                        <div class="lang en">Eng</div>
+                    </div>
+                    <button class="login">
+                        <img src="./assets/images/user.svg" alt="user">
+                        <span>Войти</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav section -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <img src="./assets/images/burger.svg" alt="burger">
+                </div>
+                <ul class="nav-list" id="nav-menu">
+                    <!-- Close button -->
+                    <li class="nav__close" id="nav-close">
+                        <img src="./assets/images/close.svg" alt="close">
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#main" class="nav-link">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#transaction" class="nav-link">СОСТОЯВШИЕСЯ СДЕЛКИ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#statistics" class="nav-link">СТАТИСТИКА</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#partner" class="nav-link">ПАРТНЕРЫ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#goodtoknow" class="nav-link">ПОЛЕЗНО ЗНАТЬ</a>
+                    </li>
+                </ul>
+                <a class="phone" href="tel:+998712070034">
+                    <img src="./assets/images/call.svg" alt="call">
+                    <span class="call-number">+998 71 207-00-34</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- lot page -->
+    <section class="lot">
+        <div class="container">
+            <h1 class="lot__title">Перец сладкий Ласточка</h1>
+            <div class="lot__wrapper">
+                <div class="lot__images">
+                    <img class="lot__main-img" src="./assets/images/lot-main-image.png" alt="lot-main-img">
+                    <div class="lot__mini-images">
+                        <img class="lot__mini-img" src="./assets/images/lot-mini-image1.svg" alt="lot-img">
+                        <img class="lot__mini-img" src="./assets/images/lot-mini-image2.svg" alt="lot-img">
+                        <img class="lot__mini-img" src="./assets/images/lot-mini-image3.jpg" alt="lot-img">
+                    </div>
+                </div>
+                <div class="lot__infos">
+                    <h1>Перец сладкий Ласточка</h1>
+                    <p>Номер товара: <b>301521</b> </p>
+                    <p> Количество товара: <b> 10 тн.</b></p>
+                    <p> Цена за единицу: <b>6 000 сум/килограмм</b> </p>
+                    <p> Групповая сделка: <b>Нет</b> </p>
+                    <p> Тип торговли: <b>Конкурентные</b> </p>
+                    <p> Тип гарантии: <b>С гарантией</b> </p>
+                    <p> Производитель: <b>JVC Uz Dong Yang Co, Ltd</b> </p>
+                    <p> Страна производителя: <b>УЗБЕКИСТАН</b> </p>
+                    <p> Статус: <span>Активен</span> </p>
+                    <div class="start-end__date">
+                        <button class="start__date"><span>Дата начало:</span> <b>январь 31 2024, 10:36:53</b></button>
+                        <button class="end__date"><span>Дата окончания:</span> <b>февраль 07 2024, 15:42:39</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="description-review">
+                <h3>Description and review</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- new product section -->
+    <section class="new-product lot__new-product">
+        <div class="container">
+            <h1>Новые товары</h1>
+            <div class="new-product__wrapper">
+                <!-- card-1 -->
+                <a class="new-product__card" href="./lot.html">
+                    <img src="./assets/images/lot1.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </a>
+
+                <!-- card-2 -->
+                <a class="new-product__card" href="./lot.html">
+                    <img src="./assets/images/lot2.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </a>
+
+                <!-- card-3 -->
+                <a class="new-product__card" href="./lot.html">
+                    <img src="./assets/images/lot3.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </a>
+
+                <!-- card-4 -->
+                <a class="new-product__card" href="./lot.html">
+                    <img src="./assets/images/lot4.png" alt="lot-img">
+                    <div class="new-product__card--info">
+                        <p>Номер: <span>48385</span></p>
+                        <p>Яблоко</p>
+                        <p>Старт. цена: <span>4715 UZS</span></p>
+                        <p>Количество: <span>1/100 кг.</span></p>
+                        <p>Дата окончания: <b>02.06.2024</b></p>
+                    </div>
+                </a>
+            </div>
+            <div class="show__more--btn-wrapper">
+                <button class="show__more--btn">
+                    Показать больше товаров
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./assets/images/logo-footer.svg" alt="footer-logo">
+            </div>
+            <div class="footer__wrapper">
+                <!-- first column -->
+                <div class="footer__first-column">
+                    <div class="footer__text">
+                        <p>Уполномоченный орган : Министерство</p>
+                        <p>Экономики и финансов Республики Узбекистан</p>
+                        <p>Адрес: 100017 Республика Узбекистан г.</p>
+                        <p>Ташкент ул. Истиклол д. 29</p>
+                        <p>Телефон: <a href="tel:+998712035050">(71) 203-50-50</a></p>
+                        <p>E-mail: <a href="mailto:info@mf.uz">info@mf.uz</a></p>
+                        <p>E-xat: для Министерств и ведомств mf@exat.uz</p>
+                    </div>
+                </div>
+
+                <!-- second column -->
+                <div class="footer__second-column">
+                    <div class="footer__menu">
+                        <ul>
+                            <li>
+                                <a href="#">СОСТОЯВШИЕСЯ СДЕЛКИ </a>
+                            </li>
+                            <li>
+                                <a href="#">ИНФОРМАЦИЯ </a>
+                            </li>
+                            <li>
+                                <a href="#">СТАТИСТИКА </a>
+                            </li>
+                            <li>
+                                <a href="#"> ПАРТНЕРЫ </a>
+                            </li>
+                            <li>
+                                <a href="#"> ПОЛЕЗНО ЗНАТЬ </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- third column -->
+                <div class="footer__third-column">
+                    <ul class="third__menu">
+                        <li>
+                            <a href="#">Термины и определения Политика </a>
+                        </li>
+                        <li>
+                            <a href="#"> конфиденциальности Часто </a>
+                        </li>
+                        <li>
+                            <a href="#">задаваемые вопросы </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/facebook.png" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/instagram.png" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/x.png" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/youtube.png" alt="youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__copyright">
+                <p>Copyright &copy; 2020-2024. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
