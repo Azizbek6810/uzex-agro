@@ -355,6 +355,7 @@ nav a {
   margin-top: 10px;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.4s ease;
+  color: black;
 }
 
 .categories__item:hover h3 {
